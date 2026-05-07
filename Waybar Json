@@ -1,0 +1,32 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 40,
+    "margin-top": 8,
+    "margin-left": 20,
+    "margin-right": 20,
+    "spacing": 0,
+
+    "modules-left": ["clock"],
+    "modules-center": ["custom/search"],
+    "modules-right": ["pulseaudio"],
+
+    "custom/search": {
+        "format": "Busqueda",
+        "on-click": "hyprlauncher",
+        "tooltip": false
+    },
+
+    "clock": {
+        "interval": 1,
+        "format": "{:%H:%M}",
+        "format-alt": "{:%A, %d de %B de %Y}",
+        "tooltip": false
+    },
+
+    "pulseaudio": {
+        "format": "{volume}%",
+        "on-click": "pavucontrol",
+        "tooltip": false
+    }
+}
